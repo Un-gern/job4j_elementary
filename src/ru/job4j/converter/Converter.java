@@ -1,24 +1,48 @@
 package ru.job4j.converter;
 
-import java.sql.SQLOutput;
-import java.util.jar.JarOutputStream;
+/**
+ * @author Maksim Antonov
+ * Конвертер валют
+ * @since 25.05.2020
+ * @version 1.0
+ */
 
 public class Converter {
+    /**
+     * Конвертация рублей в евро
+     * @param value рубль
+     * @return евро
+     */
     public static int rubleToEuro(int value) {
         int rsl = value / 70;
         return rsl;
     }
 
+    /**
+     * Конвертация рублей в доллары
+     * @param value рубль
+     * @return евро
+     */
     public static float rubleToDollar(float value) {
         float rsl = value / 60;
         return rsl;
     }
 
+    /**
+     * Конвертаци долларов в евро
+     * @param value доллары
+     * @return евро
+     */
     public static float dollarToEuro(float value) {
         float rsl = value / 1.08f;
         return rsl;
     }
 
+    /**
+     * Конвертация евро в доллары
+     * @param value евро
+     * @return доллары
+     */
     public static float euroToDollar(float value) {
         float rsl = value / 0.92f;
         return rsl;
